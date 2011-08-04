@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Number tools - Powered by Nguyen Kim Kha</title>
+	<script src="converter.js"></script>
+	<script>
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+
+function $g(id) {
+	return document.getElementById(id);
+}
+
+function $n(text) {
+	var result = parseInt(text);
+	if (isNaN(result)) {
+		return false;
+	}
+	return result;
+}
+
+window.onload = function(){
+	var text = getURLParameter('text');
+	$g('num').innerText = text;
+	
+	var num = $n(text);
+	if (num == false) {
+		$g('result').innerText = "That is not number!";
+	} else {
+		$g("hex").innerText = toHex(num);
+	}
+}
+
+	</script>
+</head>
+<body>
+<h3>Result for: <span id="num"></span></h3>
+<div id="result">
+
+	<table>
+	<tr>
+		<td>Hexadecimals:</td>
+		<td><span id="hex"></span></td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
