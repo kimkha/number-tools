@@ -1,10 +1,10 @@
 {
    "name": "Number tools",
    "version": "1.0",
-   "description": "To use, type 'iprint' plus a number into the Omnibox.",
+   "description": "To use, type 'n' plus a number into the Omnibox.",
    "background_page": "background.html",
    "omnibox": {
-      "keyword": "iprint"
+      "keyword": "n"
    },
    "permissions": [ "tabs" ]
 }
