@@ -32,6 +32,7 @@ window.onload = function(){
 		$g('result').innerText = "That is not number!";
 	} else {
 		$g("hex").innerText = toHex(num);
+		$g("oct").innerText = toOct(num);
 	}
 }
 
@@ -41,10 +42,18 @@ window.onload = function(){
 <h3>Result for: <span id="num"></span></h3>
 <div id="result">
 
-	<table>
+	<table border=1 cellpadding=4>
+	<tr>
+		<th>Kind</th>
+		<th>Value</th>
+	</tr>
 	<tr>
 		<td>Hexadecimals:</td>
 		<td><span id="hex"></span></td>
+	</tr>
+	<tr>
+		<td>Octals:</td>
+		<td><span id="oct"></span></td>
 	</tr>
 	</table>
 

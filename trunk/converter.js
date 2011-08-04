@@ -12,7 +12,19 @@ function convert(text) {
 }
 
 function toHex(num) {
-	return "0x" + num.toString(16);
+	if (num >=0) {
+		return "0x" + num.toString(16);
+	} else {
+		return "-0x" + num.toString(16).substring(1);
+	}
+}
+
+function toOct(num) {
+	if (num >=0) {
+		return "0" + num.toString(8);
+	} else {
+		return "-0" + num.toString(8).substring(1);
+	}
 }
 
 
