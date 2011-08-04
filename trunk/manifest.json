@@ -1,0 +1,12 @@
+{
+   "background_page": "background.html",
+   "description": "To use, type 'iprint' plus a number into the Omnibox.",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdC1/io7kNYwHNkH3JyWzwpOQhcpr0qEt568LjthKeoNLUmXi4lHQHf+O32rA5thKeLNHyte/S0q/kFVjOTsp4DBJFzA2UjR9p9TUO8WYfxuFf/uFoUXlh2ma3KU/bjMg6fuLuRT0cJwLyIziEu25teNct6jZ/0AtmE+EGNGzmnQIDAQAB",
+   "name": "Number converter",
+   "omnibox": {
+      "keyword": "iprint"
+   },
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
