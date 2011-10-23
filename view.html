@@ -33,6 +33,7 @@ window.onload = function(){
 	} else {
 		$g("hex").innerText = toHex(num);
 		$g("oct").innerText = toOct(num);
+		$g("date").innerText = toDate(num);
 	}
 }
 
@@ -42,19 +43,34 @@ window.onload = function(){
 <h3>Result for: <span id="num"></span></h3>
 <div id="result">
 
-	<table border=1 cellpadding=4>
-	<tr>
-		<th>Kind</th>
-		<th>Value</th>
-	</tr>
-	<tr>
-		<td>Hexadecimals:</td>
-		<td><span id="hex"></span></td>
-	</tr>
-	<tr>
-		<td>Octals:</td>
-		<td><span id="oct"></span></td>
-	</tr>
+	<table border="1" cellpadding="4">
+	<thead>
+		<tr>
+			<th>Kind</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2">Number conversions</th>
+		</tr>
+		<tr>
+			<td>Hexadecimals:</td>
+			<td><span id="hex"></span></td>
+		</tr>
+		<tr>
+			<td>Octals:</td>
+			<td><span id="oct"></span></td>
+		</tr>
+		
+		<tr>
+			<th colspan="2">Date Time conversions</th>
+		</tr>
+		<tr>
+			<td>Date string:</td>
+			<td><span id="date"></span></td>
+		</tr>
+	</tbody>
 	</table>
 
 </div>

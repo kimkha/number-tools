@@ -27,6 +27,14 @@ function toOct(num) {
 	}
 }
 
+function toDate(num) {
+	if (num < 0) {
+		return "Not a valid date";
+	} else {
+		return (new Date(num)).toLocaleString();
+	}
+}
+
 
 
 

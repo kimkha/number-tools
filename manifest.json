@@ -1,7 +1,7 @@
 {
    "name": "Number tools",
-   "version": "1.0",
-   "description": "To use, type 'n' plus a number into the Omnibox.",
+   "version": "0.1",
+   "description": "Convert number to many forms of it. To use it, type 'n' and then your number, such as 'n 1234'.",
    "background_page": "background.html",
    "omnibox": {
       "keyword": "n"
